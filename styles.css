@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -15,18 +14,14 @@ body {
     overflow: hidden;
     font-family: "Segoe UI", Arial, sans-serif;
     color: #ffffff;
+
+    /* Fondo de cristales a pantalla completa */
     background:
-        radial-gradient(
-            ellipse at 20% 20%,
-            rgba(30, 64, 175, 0.30),
-            transparent 45%
+        linear-gradient(
+            rgba(3, 6, 12, 0.35),
+            rgba(3, 6, 12, 0.50)
         ),
-        radial-gradient(
-            ellipse at 80% 80%,
-            rgba(109, 40, 217, 0.22),
-            transparent 45%
-        ),
-        #080b14;
+        url("img/fondo-cristales.png") center center / cover no-repeat fixed;
 }
 
 /* Área de animación */
@@ -39,7 +34,7 @@ body {
     height: 100%;
     z-index: 1;
     background: transparent;
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 /* Estilo Liquid Glass */
